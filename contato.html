@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ONG Amigo Fiel</h1>
+        <nav>
+            <ul>
+                <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="adocao.html">Adoção</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- === CONTEÚDO PRINCIPAL === -->
+    <main class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida, quer ser voluntário ou fazer uma doação? Fale com a gente!</p>
+
+        <!-- FORMULÁRIO DE CONTATO -->
+        <form class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- INFORMAÇÕES DE CONTATO DA ONG -->
+        <div class="info-contato">
+            <h3>Informações</h3>
+            <p><strong>Endereço:</strong> Rua dos Animais Felizes, 123 - Belo Horizonte, MG</p>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@amigofiel.org</p>
+        </div>
+    </main>
+
+    <!-- === RODAPÉ === -->
+    <footer>
+        <p>© 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
+        <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
+    </footer>
+</body>
+</html>
