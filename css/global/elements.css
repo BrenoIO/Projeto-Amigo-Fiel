@@ -1,0 +1,230 @@
+/* Navbar */
+
+.menu-toggle {
+  display: none; /* escondido no desktop */
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* botão aparece no mobile */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* menu esconde no mobile inicialmente */
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #eaf1f0; /* ou a cor do seu header */
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex; /* menu abre quando clicado */
+  }
+}
+/* ------------------------------
+   background
+------------------------------ */
+.background{
+  text-align: center;
+  background: linear-gradient(135deg, var(--cor-branquin),var(--cor-verdin));
+}
+
+/* Menu principal */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-1);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-branco-escuro);
+}
+
+/* itens do menu */
+.menu li {
+  margin: 0;
+}
+
+/* links */
+.menu li a {
+  color: var(--cor-escura);
+  text-decoration: none;
+  padding: var(--space-1) var(--space-1);
+  display: block;
+}
+
+/* hover mantém seu efeito */
+.menu li a:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  border-radius: var(--space-1);
+  transform: scale(1.15);
+}
+/* --- Comportamento responsivo: --- */
+/* Mobile: menu horizontal e centralizado (padrão acima) */
+@media (max-width: 899px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-1) 0;
+  }
+}
+
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+/* Container dos cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* permite quebra de linha */
+    gap: var(--space-3);
+    justify-content: center; /* centraliza os cards */
+}
+
+/* Card individual */
+.cards {
+    background-color: var(--cor-branco);
+    border-radius: 12px;
+    box-shadow: var(--cor-sombra);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - var(--space-3)); /* 3 por linha */
+    max-width: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cards:hover {
+  transform: translateY(-6px);
+  transform: scale(1.05);
+  box-shadow: var(--cor-sombra-forte);
+}
+
+/* Imagem */
+.cards img {
+  width: 100%;
+  height: var(--space-8);
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Título e texto */
+.cards h3 {
+  color: var(--cor-primaria);
+  margin-top: var(--space-3);
+  font-weight: bold;
+}
+
+.cards p {
+  color: var(--cor-cinza);
+  padding: 0 var(--space-1) var(--space-5);
+}
+
+/* Conteúdo de texto */
+.cards-content {
+  background-color: var(--cor-superfice);
+  padding: var(--space-1) var(--space-1);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.cards-geral{
+  background: linear-gradient(135deg, var(--cor-branquin),var(--cor-verdin));
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--cor-primaria);
+ 
+
+}
+/* ------------------------------
+   Galeria 
+------------------------------ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
+/* Testemunhos ou seções específicas */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+/* Cabeçalho */
+header {
+  grid-area: header;
+  background-color: var(--cor-branco-escuro);
+  box-shadow: var(--cor-preto);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: var(--cor-primaria);
+  font-size: var(--fs-xl);
+  text-align: center;
+  padding: var(--space-2) 0;
+}
+/* ------------------------------
+   RODAPÉ
+------------------------------ */
+footer {
+  grid-area: footer;
+  background: linear-gradient(135deg, var(--cor-escura), var(--cor-preto));
+  text-align: center;
+  padding: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--cor-verdin);
+  border-top: var(--cor-sombra);
+}
+
+footer p {
+  margin-bottom: var(--space-1);
+}
+/* ------------------------------
+   Botões
+------------------------------ */
+.botao {
+  background-color: var(--cor-amarelo);
+  color: var(--cor-branco);
+  padding: var(--space-2) var(--space-3);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+  background-color: var(--cor-rose);
+}
+
+/* ------------------------------
+    Mensagem pnricipal
+------------------------------ */
+.msg {
+  text-align: center;
+  padding: var(--space-5) var(--space-3);
+  background: linear-gradient(135deg, var(--cor-branquin),var(--cor-verdin));
+}
+
+.msg h2 {
+  color: var(--cor-primaria);
+}
+
+.msg p {
+  max-width: 700px;
+  margin: 0 auto var(--space-3);
+  color: var(--cor-preto);
+}

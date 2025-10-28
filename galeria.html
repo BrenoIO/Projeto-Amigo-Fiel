@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - ONG Amigo Fiel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/galeria/galeria.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho do site com o nome da ONG e o menu de navegação -->
+    
     <header>
         <h1>ONG Amigo Fiel</h1>
-        <nav>
-            <ul>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-links">
+            <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="adocao.html">Adoção</a></li>
                 <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="galeria.html" class="ativo">Galeria</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Conteúdo principal da página -->
-    <main class="galeria">
-        <h2>Galeria de Momentos 🐾</h2>
-        <p>Veja alguns dos momentos especiais da ONG Amigo Fiel — adoções, eventos e nossos amigos de quatro patas!</p>
-
-        <!-- Galeria de imagens fixas -->
-        <section class="grade-galeria">
-            <div class="foto">
-                <img src="imagens/adotando.jpg" alt="Cachorro adotado com novo dono">
-                <p>Alegria de um novo lar!</p>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/arrecadacao.jpg" alt="Evento de arrecadação de doações">
-                <p>Evento de arrecadação de doações</p>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/alimentando.jpg" alt="Voluntários alimentando cães">
-                <p>Voluntários cuidando com amor</p>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/gato.jpg" alt="Gato brincando">
-                <p>Brincadeiras e alegria no abrigo</p>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/adocao.jpg" alt="Feira de adoção">
-                <p>Feira de adoção - um sucesso!</p>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/brincando.jpg" alt="Crianças com cachorros na ONG">
-                <p>Interação entre crianças e pets</p>
-            </div>
+    <main>
+        <section class="msg">
+            <h2>Galeria de Momentos 🐾</h2>
+            <p>Veja alguns dos momentos especiais da ONG Amigo Fiel — adoções, eventos e nossos amigos de quatro patas!
+            </p>
         </section>
+        <!-- Galeria de imagens fixas -->
+        <div class="cards-geral">
+            <div class="card-container">
+                <div class="cards img">
+                    <img src="imagens/adotando.jpg" alt="Cachorro adotado com novo dono">
+                    <div class="cards-content">
+                        <p>Alegria de um novo lar!</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/arrecadacao.jpg" alt="Evento de arrecadação de doações">
+                    <div class="cards-content">
+                        <p>Evento de arrecadação de doações</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/alimentando.jpg" alt="Voluntários alimentando cães">
+                    <div class="cards-content">
+                        <p>Voluntários cuidando com amor</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/gato.jpg" alt="Gato brincando">
+                    <div class="cards-content">
+                        <p>Brincadeiras e alegria no abrigo</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/adocao.jpg" alt="Feira de adoção">
+                    <div class="cards-content">
+                        <p>Feira de adoção - um sucesso!</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/brincando.jpg" alt="Crianças com cachorros na ONG">
+                    <div class="cards-content">
+                        <p>Interação entre crianças e pets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Rodapé com direitos autorais -->
+    <!-- === RODAPÉ === -->
     <footer>
-        <p>© 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
+        <p>&copy; 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
         <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
     </footer>
 
 </body>
+
 </html>

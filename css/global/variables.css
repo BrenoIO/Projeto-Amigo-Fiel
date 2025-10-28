@@ -1,0 +1,58 @@
+:root {
+  /* === CORES === */
+  
+  /* Primária */
+    --cor-primaria: #4FA69F;       /* Verde água - cor principal */
+
+  /* Secundárias */
+    --cor-amarelo: #F2C14E;     /* Amarelo suave - cor de destaque */
+    --cor-rose: #E56B6F;      /* Rosa avermelhado - para alertas e botões */
+    --cor-verdin: #EAF7F5;    /* Verde Bem clarinho - para degrade*/
+    --cor-azulin: #3498db;    /* Azul Bem claro */
+    --cor-azul: #2980b9;      /*azul claro porem forte */
+    --cor-azul-bolado: #2c3e50; /*azul forte*/
+    --cor-verde: #27ae60;        /*verde */
+    --cor-verde-forte: #1e874b;   /*verde forte*/
+    --cor-azul-escuro: #34495e;  /*azul escuro*/
+    
+
+  /* Neutras */
+  --cor-superfice: #f9f9f9;    /* Fundo geral */
+  --cor-branco: #ffffff;       /* Cartões, seções em destaque */
+  --cor-branco-escuro: #ffffffcc;
+  --cor-borda: #e0e0e0;        /* Bordas suaves */
+  --cor-branquin: #EAF2F2;
+  --cor-sombra: rgba(0, 0, 0, 0.1); /* Sombras leves */
+  --cor-preto: #000;                /* Cor preto*/
+  --cor-cinza: #777777;             /* Cor Cinza*/
+  --cor-escura: #333333;            /* Cor Cinza com preto*/
+  --cor-sombra-forte: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra forte*/
+  --cor-brancao: #ccc;              /* Cor Branca mas um pouco mais aparente/forte */
+
+  /* 🖋️ TIPOGRAFIA HIERÁRQUICA  */
+  --fonte-principal: 'Poppins', Arial, sans-serif;
+  --fs-xxl: 2.5rem;  /* títulos principais (h1) */
+  --fs-xl: 2rem;     /* subtítulos (h2) */
+  --fs-lg: 1.5rem;   /* destaques (h3) */
+  --fs-md: 1rem;     /* texto padrão */
+  --fs-sm: 0.875rem; /* texto auxiliar */
+
+
+  /* 📏 SISTEMA DE ESPAÇAMENTO MODULAR */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 124px;
+  --space-8: 164px;
+  --space-9: 240px;
+  --space-10: 320px;
+  --space-11: 360px;
+  --space-12: 640px;
+
+   /* ⚙️ GRID */
+  --grid-columns: 12;
+  --grid-gap: 16px;
+}

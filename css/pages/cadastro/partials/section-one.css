@@ -1,0 +1,100 @@
+/* ==============================
+   FORMULÁRIO DE VOLUNTÁRIO
+   ============================== */
+
+/* ====== RESET E BASE ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: var(--fonte-principal);
+  
+}
+
+
+
+/* ====== SEÇÃO PRINCIPAL ====== */
+.form-voluntario {
+  background-color: var(--cor-branco);
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: var(--fs-xxl);
+  border-radius: var(--space-2);
+  box-shadow: var(--cor-sombra);
+}
+
+.form-voluntario h3 {
+  text-align: center;
+  margin-bottom: var(--fs-xl);
+  color: var(--cor-rose);
+}
+
+/* ====== FIELDSETS ====== */
+fieldset {
+  border: 2px solid var(--cor-azulin);
+  border-radius: var(--space-1);
+  padding: var(--fs-lg);
+  margin-bottom: var(--fs-lg);
+}
+
+legend {
+  font-weight: var(--fonte-principal);
+  color: var(--cor-azul);
+  padding: 0 var(--space-1);
+}
+
+/* ====== LABELS E INPUTS ====== */
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--cor-brancao);
+  border-radius: 6px;
+  font-size: var(--fs-md);
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--cor-azulin);
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.5) ;
+}
+
+/* ====== BOTÃO DE ENVIO ====== */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: var(--fs-md);
+  background-color: var(--cor-azulin);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: var(--space-1);
+  cursor: pointer;
+  margin-top: var(--fs-md);
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--cor-azul);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+  .form-voluntario {
+    padding: 1.5rem;
+  }
+
+  input,
+  select {
+    font-size: 0.95rem;
+  }
+}

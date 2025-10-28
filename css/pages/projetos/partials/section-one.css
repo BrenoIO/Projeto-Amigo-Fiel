@@ -1,0 +1,12 @@
+/* ------------------------------
+   SEÇÃO DESTAQUES (cards)
+------------------------------ */
+
+.fazemos{
+  background: linear-gradient(135deg, var(--cor-branquin),var(--cor-verdin));
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--cor-primaria);
+ 
+
+}

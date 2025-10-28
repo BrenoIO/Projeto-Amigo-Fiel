@@ -2,19 +2,19 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8"> <!-- Define o padrão de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site ser responsivo -->
-    <title>Voluntários - ONG Amigo Fiel</title> <!-- Título que aparece na aba do navegador -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos -->
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="css/pages/cadastro/cadastro.css">
 
 <body>
     <!-- ======== CABEÇALHO ======== -->
     <header>
-        <h1>ONG Amigo Fiel</h1> <!-- Nome da ONG -->
-        <nav>
-            <ul>
-                <!-- Menu com todas as páginas -->
+        <h1>ONG Amigo Fiel</h1>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-links">
+            <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
@@ -28,40 +28,54 @@
     </header>
 
     <!-- ======== CONTEÚDO PRINCIPAL ======== -->
-    <main class="voluntarios">
-        <h2>Seja um Voluntário 🐕</h2>
-        <p>
-            O trabalho voluntário é essencial para o funcionamento da ONG Amigo Fiel.
-            Se você ama animais e quer fazer parte dessa causa, cadastre-se e venha nos ajudar!
-        </p>
+    <main>
+        <section class="msg">
+            <h2>Seja um Voluntário 🐕</h2>
+            <p>
+                O trabalho voluntário é essencial para o funcionamento da ONG Amigo Fiel.
+                Se você ama animais e quer fazer parte dessa causa, cadastre-se e venha nos ajudar!
+            </p>
+        </section>
 
         <!-- Seção explicando áreas de voluntariado -->
-        <section class="areas-voluntariado">
-            <div class="vol-card">
-                <img src="imagens/cuidados.jpg" alt="Pessoa cuidando de um cachorro">
-                <h3>Cuidados com os Animais</h3>
-                <p>
-                    Ajude a alimentar, dar banho e acompanhar nossos amigos peludos nas atividades diárias.
-                    Uma oportunidade de conexão e carinho!
-                </p>
-            </div>
+        <div class="cards-geral">
+            <div class="card-container">
+                <div class="cards img">
+                    <img src="imagens/cuidados.jpg" alt="Pessoa cuidando de um cachorro">
+                    <div class="cards-content">
+                        <h3>Cuidados com os Animais</h3>
+                        <p>
+                            Ajude a alimentar, dar banho e acompanhar nossos amigos peludos nas atividades diárias.
+                            Uma oportunidade de conexão e carinho!
+                        </p>
+                    </div>
 
-            <div class="vol-card">
-                <img src="imagens/voluntarios.jpg" alt="Grupo de voluntários organizando evento">
-                <h3>Eventos e Feiras</h3>
-                <p>
-                    Participe da organização de eventos de adoção e arrecadação de recursos.
-                    Traga energia e boas ideias para nossa equipe!
-                </p>
-            </div>
+                </div>
 
-            <div class="vol-card">
-                <img src="imagens/notebook.jpg" alt="Pessoa usando notebook">
-                <h3>Divulgação e Mídias</h3>
-                <p>
-                    Ajude na criação de posts, redes sociais e campanhas para divulgar a ONG e nossos projetos.
-                </p>
+                <div class="cards img">
+                    <img src="imagens/voluntarios.jpg" alt="Grupo de voluntários organizando evento">
+                    <div class="cards-content">
+                        <h3>Eventos e Feiras</h3>
+                        <p>
+                            Participe da organização de eventos de adoção e arrecadação de recursos.
+                            Traga energia e boas ideias para nossa equipe!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/notebook.jpg" alt="Pessoa usando notebook">
+                    <div class="cards-content">
+                        <h3>Divulgação e Mídias</h3>
+                        <p>
+                            Ajude na criação de posts, redes sociais e campanhas para divulgar a ONG e nossos
+                            projetos.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
+
         </section>
 
         <!-- Formulário de inscrição -->

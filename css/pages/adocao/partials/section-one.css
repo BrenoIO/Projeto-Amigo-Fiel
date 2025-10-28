@@ -1,0 +1,104 @@
+/* ==============================
+   SEÇÃO DE ADOÇÃO
+   ============================== */
+
+.animais-disponiveis {
+  text-align: center;
+  padding: var(--fs-xl);
+  background-color: var(--cor-superfice);
+}
+
+.animais-disponiveis h2 {
+  color: var(--cor-azul-bolado);
+  margin-bottom: 2rem;
+}
+
+/* ====== GRID DOS ANIMAIS ====== */
+.lista-animais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+/* ====== CARD DO ANIMAL ====== */
+.animal-card {
+  background-color: var(--cor-branco);
+  border-radius: 12px;
+  box-shadow: var(--cor-sombra-forte);
+  padding: 1rem;
+  width: 100%;
+  max-width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== IMAGEM DO ANIMAL ====== */
+.animal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+/* ====== NOME E BOTÃO ====== */
+.animal-card h3 {
+  color: var(--cor-azul-escuro);
+  margin-bottom: 0.8rem;
+}
+
+.animal-card button {
+  background-color: var(--cor-azulin);
+  color: var(--cor-branco);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.animal-card button:hover {
+  background-color: var(--cor-azul);
+}
+
+/* ====== BOTÃO DE RECARREGAR ====== */
+.container-botao {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-refresh {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: var(--fs-md);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-refresh:hover {
+  background-color: var(--cor-verde-forte);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+  .animal-card img {
+    height: 160px;
+  }
+
+  .animal-card {
+    max-width: 200px;
+  }
+}

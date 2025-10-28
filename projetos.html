@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - ONG Amigo Fiel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/projetos/projetos.css">
 </head>
+
 <body>
     <header>
         <h1>ONG Amigo Fiel</h1>
-        <nav>
-            <ul>
-                <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+        <button class="menu-toggle">☰</button>
+
+        <nav class="nav-links">
+            <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html" class="ativo">Projetos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="adocao.html">Adoção</a></li>
                 <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
@@ -25,37 +29,63 @@
     </header>
 
     <!-- === CONTEÚDO PRINCIPAL === -->
-    <main class="projetos">
-        <h2>Nossos Projetos</h2>
-        <p>Conheça algumas das ações que realizamos com amor e dedicação pelos animais.</p>
-
+    <main>
+        <section class="msg">
+            <h2>Nossos Projetos</h2>
+            <p>Conheça algumas das ações que realizamos com amor e dedicação pelos animais.</p>
+        </section>
         <!--IMAGENS DEMONSTRATIVAS-->
-        <div class="projetos-container">
-            <div class="card">
-                <img src="imagens/feira.jpg" alt="Feira de Adoção">
-                <h3>Feira de Adoção</h3>
-                <p>Evento mensal em parceria com o comércio local, promovendo a adoção responsável de cães e gatos resgatados.</p>
-            </div>
+        <div class="cards-geral">
+            <div class="card-container">
+                <div class="cards img">
+                    <img src="imagens/feira.jpg" alt="Feira de Adoção">
+                    <div class="cards-content">
+                        <h3>Feira de Adoção</h3>
+                        <p>Evento mensal em parceria com o comércio local, promovendo a adoção responsável de cães e
+                            gatos
+                            resgatados.</p>
+                    </div>
+                </div>
 
-            <div class="card">
-                <img src="imagens/resgate.jpg" alt="Resgate de Animais">
-                <h3>Resgates</h3>
-                <p>Equipes de voluntários que atuam no resgate e recuperação de animais em situação de abandono e maus-tratos.</p>
-            </div>
 
-            <div class="card">
-                <img src="imagens/castracao.jpg" alt="Campanha de Castração">
-                <h3>Campanha de Castração</h3>
-                <p>Programas acessíveis de castração e conscientização para reduzir o número de animais abandonados nas ruas.</p>
+                <div class="cards img">
+                    <img src="imagens/resgate.jpg" alt="Resgate de Animais">
+                    <div class="cards-content">
+                        <h3>Resgates</h3>
+                        <p>Equipes de voluntários que atuam no resgate e recuperação de animais em situação de abandono
+                            e
+                            maus-tratos.</p>
+                    </div>
+                </div>
+
+                <div class="cards img">
+                    <img src="imagens/castracao.jpg" alt="Campanha de Castração">
+                    <div class="cards-content">
+                        <h3>Campanha de Castração</h3>
+                        <p>Programas acessíveis de castração e conscientização para reduzir o número de animais
+                            abandonados nas
+                            ruas.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <script>
+            const toggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav-links');
+
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('active'); // abre ou fecha o menu
+            });
+        </script>
     </main>
 
     <!-- === RODAPÉ === -->
     <footer>
-        <p>© 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
+        <p>&copy; 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
         <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
     </footer>
-    
+
 </body>
+
 </html>

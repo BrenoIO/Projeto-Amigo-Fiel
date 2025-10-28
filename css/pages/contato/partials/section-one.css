@@ -1,0 +1,70 @@
+/* ==============================
+   FORMULÁRIO DE CONTATO
+   ============================== */
+
+/* ====== CONTAINER PRINCIPAL ====== */
+.form-contato {
+  background-color: var(--cor-branco);
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: var(--space-2);
+  box-shadow: var(--cor-sombra-forte);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== LABELS ====== */
+.form-contato label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: var(--cor-azul);
+}
+
+/* ====== CAMPOS DE TEXTO ====== */
+.form-contato input,
+.form-contato textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--cor-brancao);
+  border-radius: 6px;
+  font-size: var(--fs-md);
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: var(--cor-azulin);
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+/* ====== BOTÃO ====== */
+.form-contato button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  background-color: var(--cor-azulin);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: var(--space-1);
+  cursor: pointer;
+  font-size: var(--fs-md);
+  transition: background 0.3s ease;
+}
+
+.form-contato button[type="submit"]:hover {
+  background-color: var(--cor-azul);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+  .form-contato {
+    padding: 1.5rem;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 0.95rem;
+  }
+}

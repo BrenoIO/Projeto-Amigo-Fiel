@@ -1,0 +1,41 @@
+/* Base (mobile first) */
+html {
+  font-size: 16px;
+}
+
+/* ======= BREAKPOINTS ======= */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Laptops */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Mobile médio */
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 400px) {
+  html {
+    font-size: 11px;
+  }
+}

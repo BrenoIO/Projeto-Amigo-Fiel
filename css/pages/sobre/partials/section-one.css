@@ -1,0 +1,64 @@
+.sobre {
+  background-color: var(--cor-branco);
+  max-width: 900px;
+  margin: var(--space-5) auto;
+  padding: var(--space-4);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título principal da página */
+.sobre h2 {
+  color: var(--cor-primaria);
+  text-align: center;
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-3);
+}
+
+/* Subtítulos ("Nossos Valores", "Como Atuamos") */
+.sobre h3 {
+  color: var(--cor-terciaria);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-lg);
+}
+
+/* Parágrafos principais */
+.sobre p {
+  color: var(--cor-escura);
+  line-height: 1.7;
+  margin-bottom: var(--space-2);
+  text-align: justify;
+}
+
+/* Lista de valores (com ícones e espaçamento suave) */
+.sobre ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.sobre ul li {
+  background-color: var(--cor-clara);
+  margin-bottom: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 8px;
+  font-size: var(--fs-md);
+  color: var(--cor-escura);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  transition: background-color 0.3s ease;
+}
+
+.sobre ul li:hover {
+  background-color: var(--cor-fundo-footer);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre {
+    margin: var(--space-4) var(--space-2);
+    padding: var(--space-3);
+  }
+}

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8"> <!-- Define o padrão de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo -->
-    <title>Doações - ONG Amigo Fiel</title> <!-- Título que aparece na aba do navegador -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="css/pages/doacoes/doacoes.css">
 </head>
 
 <body>
-    <!-- ======== CABEÇALHO ======== -->
+
     <header>
-        <h1>ONG Amigo Fiel</h1> <!-- Nome da ONG -->
-        <nav>
-            <ul>
-                <!-- Menu de navegação com todas as páginas -->
+        <h1>ONG Amigo Fiel</h1>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-links">
+            <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="adocao.html">Adoção</a></li>
-                <li><a href="doacoes.html" class="ativo">Doações</a></li> <!-- Página atual -->
+                <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -27,54 +29,59 @@
     </header>
 
     <!-- ======== CONTEÚDO PRINCIPAL ======== -->
-    <main class="doacoes">
-        <h2>Ajude a ONG Amigo Fiel 🐾</h2>
-        <p>
-            Sua doação transforma vidas! Com sua ajuda, conseguimos alimentar, vacinar e cuidar de dezenas de animais resgatados.
-            Toda contribuição faz a diferença. ❤️
-        </p>
+    <main>
+        <section class="msg">
+            <h2>Ajude a ONG Amigo Fiel 🐾</h2>
+            <p>
+                Sua doação transforma vidas! Com sua ajuda, conseguimos alimentar, vacinar e cuidar de dezenas de
+                animais resgatados.
+                Toda contribuição faz a diferença. ❤️
+            </p>
 
-        <!-- Seção com formas de doação -->
-        <section class="formas-doacao">
-            <!-- Opção 1: Doação em dinheiro -->
-            <div class="doacao-card">
-                <img src="imagens/cofrinho.jpg" alt="Pessoa segurando um cofrinho em forma de coração">
-                <h3>Doação Financeira</h3>
-                <p>
-                    Você pode contribuir com qualquer valor via Pix, transferência ou boleto.
-                    Toda doação é usada para cuidados veterinários, alimentação e abrigo dos animais.
-                </p>
-                <p><strong>Chave Pix:</strong> contato@amigofiel.org</p>
-            </div>
 
-            <!-- Opção 2: Doação de itens -->
-            <div class="doacao-card">
-                <img src="imagens/racao.jpg" alt="Saco de ração e tigela de cachorro">
-                <h3>Doação de Itens</h3>
-                <p>
-                    Aceitamos ração, cobertores, remédios e outros itens de cuidado animal.
-                    Você pode entregar pessoalmente ou enviar pelos Correios.
-                </p>
-                <p><strong>Endereço:</strong> Rua dos Animais Felizes, 123 - São Paulo, SP</p>
-            </div>
+            <section class="cards-geral">
+                <!-- Opção 1: Doação em dinheiro -->
+                <div class="card-container">
+                    <div class="cards img">
+                        <img src="imagens/cofrinho.jpg" alt="Pessoa segurando um cofrinho em forma de coração">
+                        <h3>Doação Financeira</h3>
+                        <p>
+                            Você pode contribuir com qualquer valor via Pix, transferência ou boleto.
+                            Toda doação é usada para cuidados veterinários, alimentação e abrigo dos animais.
+                        </p>
+                        <p><strong>Chave Pix:</strong> contato@amigofiel.org</p>
+                    </div>
 
-            <!-- Opção 3: Adoção à distância -->
-            <div class="doacao-card">
-                <img src="imagens/carinho.jpg" alt="Pessoa acariciando cachorro">
-                <h3>Adoção à Distância</h3>
-                <p>
-                    Quer ajudar um animal, mas não pode adotar? Torne-se seu padrinho!
-                    Com uma doação mensal, você acompanha o bichinho e ajuda com seus cuidados.
-                </p>
-                <button>Seja um Padrinho</button>
-            </div>
-        </section>
+                    <!-- Opção 2: Doação de itens -->
+                    <div class="cards img">
+                        <img src="imagens/racao.jpg" alt="Saco de ração e tigela de cachorro">
+                        <h3>Doação de Itens</h3>
+                        <p>
+                            Aceitamos ração, cobertores, remédios e outros itens de cuidado animal.
+                            Você pode entregar pessoalmente ou enviar pelos Correios.
+                        </p>
+                        <p><strong>Endereço:</strong> Rua dos Animais Felizes, 123 - São Paulo, SP</p>
+                    </div>
+
+                    <!-- Opção 3: Adoção à distância -->
+                    <div class="cards img">
+                        <img src="imagens/carinho.jpg" alt="Pessoa acariciando cachorro">
+                        <h3>Adoção à Distância</h3>
+                        <p>
+                            Quer ajudar um animal, mas não pode adotar? Torne-se seu padrinho!
+                            Com uma doação mensal, você acompanha o bichinho e ajuda com seus cuidados.
+                        </p>
+                        <div class="botao">Seja um Padrinho</div>
+                    </div>
+                </div>
+            </section>
     </main>
 
-    <!-- ======== RODAPÉ ======== -->
+    <!-- === RODAPÉ === -->
     <footer>
         <p>© 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
         <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
     </footer>
 </body>
+
 </html>
