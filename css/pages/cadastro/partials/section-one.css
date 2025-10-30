@@ -11,6 +11,17 @@
   
 }
 
+.erro {
+    color: var(--cor-vermelho);
+    font-size: 0.9rem;
+    margin-top: 3px;
+    display: block;
+}
+
+.campo-erro {
+    border: 2px solid red;
+}
+
 
 
 /* ====== SEÇÃO PRINCIPAL ====== */

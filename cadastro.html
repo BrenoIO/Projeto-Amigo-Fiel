@@ -13,18 +13,19 @@
         <h1>ONG Amigo Fiel</h1>
         <button class="menu-toggle">☰</button>
         <nav class="nav-links">
-            <!-- MENU DE NAVEGAÇÃO COM TODAS AS PÁGINAS -->
             <ul class="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="adocao.html">Adoção</a></li>
-                <li><a href="doacoes.html">Doações</a></li>
-                <li><a href="cadastro.html" class="ativo">Cadastro</a></li> <!-- Página atual -->
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html" data-msg="Bem-vindo à página inicial!">🏠 Início</a></li>
+                <li><a href="sobre.html" data-msg="Saiba mais sobre nossa ONG">ℹ️ Sobre</a></li>
+                <li><a href="projetos.html" data-msg="Veja nossos projetos">📂 Projetos</a></li>
+                <li><a href="adocao.html" data-msg="Conheça os animais disponíveis">🐶 Adoção</a></li>
+                <li><a href="doacoes.html" data-msg="Ajude com doações">💖 Doações</a></li>
+                <li><a href="cadastro.html" data-msg="Cadastre-se para ajudar">📝 Cadastro</a></li>
+                <li><a href="galeria.html" data-msg="Veja nossa galeria de fotos">📷 Galeria</a></li>
+                <li><a href="contato.html" data-msg="Entre em contato conosco">✉️ Contato</a></li>
             </ul>
         </nav>
+         <!-- Div para mostrar mensagem ao passar o mouse -->
+        <div id="hover-msg" class="hover-msg" style="padding:10px;"></div>
     </header>
 
     <!-- ======== CONTEÚDO PRINCIPAL ======== -->
@@ -150,34 +151,7 @@
         </section>
 
         <!-- ======== SCRIPT DE MÁSCARAS ======== -->
-        <script>
-            /* 
-                Aplica máscaras automáticas aos campos CPF, telefone e CEP
-                conforme o usuário digita, usando expressões regulares.
-            */
-
-            document.getElementById('cpf').addEventListener('input', function () {
-                let cpf = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
-                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
-                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-                this.value = cpf;
-            });
-
-            document.getElementById('telefone').addEventListener('input', function () {
-                let tel = this.value.replace(/\D/g, '');
-                tel = tel.replace(/^(\d{2})(\d)/g, '($1) $2');
-                tel = tel.replace(/(\d{5})(\d{4})$/, '$1-$2');
-                this.value = tel;
-            });
-
-            document.getElementById('cep').addEventListener('input', function () {
-                let cep = this.value.replace(/\D/g, '');
-                cep = cep.replace(/(\d{5})(\d)/, '$1-$2');
-                this.value = cep;
-            });
-        </script>
-
+        <script src="js/validacao.js"></script>
     </main>
 
     <!-- ======== RODAPÉ ======== -->
@@ -185,6 +159,9 @@
         <p>&copy; 2025 ONG Amigo Fiel - Todos os direitos reservados</p>
         <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
     </footer>
+    <script src="js/spa.js"></script>
+    <!-- script js de validação -->
+    <script src="js/validacao.js"></script>
 
 </body>
 

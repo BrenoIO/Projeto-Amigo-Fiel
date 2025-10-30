@@ -228,3 +228,47 @@ footer p {
   margin: 0 auto var(--space-3);
   color: var(--cor-preto);
 }
+
+/* ------------------------------
+    Erro
+------------------------------ */
+.erro {
+    color: var(--cor-vermelho);
+    font-size: 0.9rem;
+    margin-top: 3px;
+    display: block;
+}
+
+.campo-erro {
+    border: 2px solid red;
+}
+
+/* ------------------------------
+    Estilo Mouse over
+------------------------------ */
+#hover-msg {
+    display: none; 
+                  /* permite alinhar texto e imagem (ou emoji) */
+    align-items: center;         /* centraliza verticalmente */
+    justify-content: center;     /* centraliza horizontalmente */
+    font-family: var(--fonte-principal); /* fonte legível */
+    font-size: var(--fs-md);             /* tamanho da fonte */
+    color: var(--cor-preto);                 /* cor do texto */
+    background-color: var(--cor-teste);   /* cor de fundo suave */
+    border-radius: var(--space-1);          /* cantos arredondados */
+    box-shadow: var(--cor-sombra); /* sombra suave */
+    transition: all 0.3s ease;  /* animação suave quando a mensagem muda */
+    min-height: var(--space-5);            /* garante espaço mesmo sem texto */
+    text-align: center;
+}
+
+/* Estilo do texto dentro da mensagem */
+#hover-msg p {
+    margin: 0;                   /* remove margin padrão do parágrafo */
+    line-height: 1.4;            /* melhora leitura */
+}
+
+/* Opcional: emoji maior */
+#hover-msg span.emoji {
+    font-size: 1.2rem;
+}
