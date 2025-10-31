@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - ONG Amigo Fiel</title>
-    <link rel="stylesheet" href="css/pages/galeria/galeria.css">
+    <title>Projetos - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="../css/pages/projetos/projetos.css">
 </head>
 
 <body>
-
-
     <header>
         <h1>ONG Amigo Fiel</h1>
         <button class="menu-toggle">☰</button>
+
         <nav class="nav-links">
             <ul class="menu">
-                <li><a href="index.html" data-msg="Bem-vindo à página inicial!">🏠 Início</a></li>
+                <li><a href="../index.html" data-msg="Bem-vindo à página inicial!">🏠 Início</a></li>
                 <li><a href="sobre.html" data-msg="Saiba mais sobre nossa ONG">ℹ️ Sobre</a></li>
                 <li><a href="projetos.html" data-msg="Veja nossos projetos">📂 Projetos</a></li>
                 <li><a href="adocao.html" data-msg="Conheça os animais disponíveis">🐶 Adoção</a></li>
@@ -30,60 +29,56 @@
         <div id="hover-msg" class="hover-msg" style="padding:10px;"></div>
     </header>
 
-    <!-- Conteúdo principal da página -->
+    <!-- === CONTEÚDO PRINCIPAL === -->
     <main>
         <section class="msg">
-            <h2>Galeria de Momentos 🐾</h2>
-            <p>Veja alguns dos momentos especiais da ONG Amigo Fiel — adoções, eventos e nossos amigos de quatro patas!
-            </p>
+            <h2>Nossos Projetos</h2>
+            <p>Conheça algumas das ações que realizamos com amor e dedicação pelos animais.</p>
         </section>
-        <!-- Galeria de imagens fixas -->
+        <!--IMAGENS DEMONSTRATIVAS-->
         <div class="cards-geral">
             <div class="card-container">
                 <div class="cards img">
-                    <img src="imagens/adotando.jpg" alt="Cachorro adotado com novo dono">
+                    <img src="../imagens/feira.jpg" alt="Feira de Adoção">
                     <div class="cards-content">
-                        <p>Alegria de um novo lar!</p>
+                        <h3>Feira de Adoção</h3>
+                        <p>Evento mensal em parceria com o comércio local, promovendo a adoção responsável de cães e
+                            gatos
+                            resgatados.</p>
+                    </div>
+                </div>
+
+
+                <div class="cards img">
+                    <img src="../imagens/resgate.jpg" alt="Resgate de Animais">
+                    <div class="cards-content">
+                        <h3>Resgates</h3>
+                        <p>Equipes de voluntários que atuam no resgate e recuperação de animais em situação de abandono
+                            e
+                            maus-tratos.</p>
                     </div>
                 </div>
 
                 <div class="cards img">
-                    <img src="imagens/arrecadacao.jpg" alt="Evento de arrecadação de doações">
+                    <img src="../imagens/castracao.jpg" alt="Campanha de Castração">
                     <div class="cards-content">
-                        <p>Evento de arrecadação de doações</p>
-                    </div>
-                </div>
-
-                <div class="cards img">
-                    <img src="imagens/alimentando.jpg" alt="Voluntários alimentando cães">
-                    <div class="cards-content">
-                        <p>Voluntários cuidando com amor</p>
-                    </div>
-                </div>
-
-                <div class="cards img">
-                    <img src="imagens/gato.jpg" alt="Gato brincando">
-                    <div class="cards-content">
-                        <p>Brincadeiras e alegria no abrigo</p>
-                    </div>
-                </div>
-
-                <div class="cards img">
-                    <img src="imagens/adocao.jpg" alt="Feira de adoção">
-                    <div class="cards-content">
-                        <p>Feira de adoção - um sucesso!</p>
-                    </div>
-                </div>
-
-                <div class="cards img">
-                    <img src="imagens/brincando.jpg" alt="Crianças com cachorros na ONG">
-                    <div class="cards-content">
-                        <p>Interação entre crianças e pets</p>
+                        <h3>Campanha de Castração</h3>
+                        <p>Programas acessíveis de castração e conscientização para reduzir o número de animais
+                            abandonados nas
+                            ruas.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script>
+            const toggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav-links');
 
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('active'); // abre ou fecha o menu
+            });
+        </script>
     </main>
 
     <!-- === RODAPÉ === -->
@@ -91,7 +86,8 @@
         <p>&copy; 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
         <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
     </footer>
-    <script src="js/spa.js"></script>
+    <script src="../js/spa.js"></script>
+
 </body>
 
 </html>

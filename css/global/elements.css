@@ -121,7 +121,7 @@
 
 /* Título e texto */
 .cards h3 {
-  color: var(--cor-primaria);
+  color: var(--cor-verde-secundario);
   margin-top: var(--space-3);
   font-weight: bold;
 }

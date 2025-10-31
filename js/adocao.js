@@ -52,3 +52,4 @@ document.getElementById("recarregar").addEventListener("click", () => {
 
 // Chama a função ao carregar a página
 document.addEventListener("DOMContentLoaded", carregarAnimais);
+

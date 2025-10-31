@@ -2,10 +2,10 @@
   /* === CORES === */
   
   /* Primária */
-    --cor-primaria: #4FA69F;       /* Verde água - cor principal */
+    --cor-primaria: #47a676;       /* Verde água - cor principal */
 
   /* Secundárias */
-    --cor-amarelo: #F2C14E;     /* Amarelo suave - cor de destaque */
+    --cor-amarelo: #8c7000 ;     /* Amarelo suave - cor de destaque */
     --cor-rose: #E56B6F;      /* Rosa avermelhado - para alertas e botões */
     --cor-verdin: #EAF7F5;    /* Verde Bem clarinho - para degrade*/
     --cor-azulin: #3498db;    /* Azul Bem claro */
@@ -16,6 +16,7 @@
     --cor-azul-escuro: #34495e;  /*azul escuro*/
     --cor-vermelha: red;         /*Vermelho*/
     --cor-teste: #B2CBC2; 
+    --cor-verde-secundario: #439d70;
     
 
   /* Neutras */
@@ -26,7 +27,7 @@
   --cor-branquin: #EAF2F2;
   --cor-sombra: rgba(0, 0, 0, 0.1); /* Sombras leves */
   --cor-preto: #000;                /* Cor preto*/
-  --cor-cinza: #777777;             /* Cor Cinza*/
+  --cor-cinza: #717171;             /* Cor Cinza*/
   --cor-escura: #333333;            /* Cor Cinza com preto*/
   --cor-sombra-forte: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra forte*/
   --cor-brancao: #ccc;              /* Cor Branca mas um pouco mais aparente/forte */

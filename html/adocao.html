@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="../css/pages/adocao/adocao.css">
+
+<body>
+
+    <header>
+        <h1>ONG Amigo Fiel</h1>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-links">
+            <ul class="menu">
+                <li><a href="../index.html" data-msg="Bem-vindo à página inicial!">🏠 Início</a></li>
+                <li><a href="sobre.html" data-msg="Saiba mais sobre nossa ONG">ℹ️ Sobre</a></li>
+                <li><a href="projetos.html" data-msg="Veja nossos projetos">📂 Projetos</a></li>
+                <li><a href="adocao.html" data-msg="Conheça os animais disponíveis">🐶 Adoção</a></li>
+                <li><a href="doacoes.html" data-msg="Ajude com doações">💖 Doações</a></li>
+                <li><a href="cadastro.html" data-msg="Cadastre-se para ajudar">📝 Cadastro</a></li>
+                <li><a href="galeria.html" data-msg="Veja nossa galeria de fotos">📷 Galeria</a></li>
+                <li><a href="contato.html" data-msg="Entre em contato conosco">✉️ Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Div para mostrar mensagem ao passar o mouse -->
+        <div id="hover-msg" class="hover-msg" style="padding:10px;"></div>
+    </header>
+
+    <!-- ======== CONTEÚDO PRINCIPAL ======== -->
+    <main class="msg">
+        <h2>Adote um Amigo Fiel 🐾</h2>
+        <p>
+            Adotar é um gesto de amor! Aqui você pode conhecer alguns dos nossos cães e gatos que estão esperando um
+            lar.
+            Todos estão vacinados, castrados e prontos para ganhar uma nova família.
+        </p>
+
+        <!-- Seção com animais da API -->
+        <section class="animais-disponiveis">
+            <h2>Animais disponíveis para adoção 🐾</h2>
+
+            <!-- Container dos cards -->
+            <div id="lista-animais" class="lista-animais">
+                <!-- Os cards dos animais serão carregados aqui pela API -->
+            </div>
+
+            <!-- Botão fora da lista -->
+            <div class="container-botao">
+                <button id="recarregar" class="btn-refresh">🔄 Recarregar Animais</button>
+            </div>
+        </section>
+
+        <script src="../js/adocao.js"></script>
+        <script src="../js/spa.js"></script>
+
+    </main>
+
+
+    <!-- === RODAPÉ === -->
+    <footer>
+        <p>&copy; 2025 ONG Amigo Fiel - Todos os direitos reservados.</p>
+        <p>Email: contato@amigofiel.org | Telefone: (11) 99999-9999</p>
+    </footer>
+</body>
+
+</html>
